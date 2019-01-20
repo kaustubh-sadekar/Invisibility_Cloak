@@ -31,7 +31,7 @@ This [code](AR_invisibility_Cloak.py) turns a `red` colour cloth into an invisib
 
 ##  This is how it works
 ![Recordit GIF](gif2.gif) 
-#### Refer the [Tutorial](Tutorial.md) for detailed explanation of the code.
+### Refer the [Tutorial](Tutorial.md) for detailed explanation of the code.
 
 
 
