@@ -37,7 +37,6 @@ This [code](AR_invisibility_Cloak.py) turns a `red` colour cloth into an invisib
 ### Refer the [Tutorial](Tutorial.md) for detailed explanation of the code.
 
 
-
 ## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
