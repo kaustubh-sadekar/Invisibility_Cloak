@@ -19,10 +19,18 @@ background=0
 for i in range(30):
 	ret,background = cap.read()
 
+        # If somehow the webcam didn't able to capture the stream, so break out of the loop
+        if not ret:
+                break
+
 background = np.flip(background,axis=1)
 
 while(cap.isOpened()):
 	ret, img = cap.read()
+
+	# If somehow the webcam didn't able to capture the stream, so break out of the loop
+        if not ret:
+                break
 	
 	# Flipping the image (Can be uncommented if needed)
 	img = np.flip(img,axis=1)
@@ -30,8 +38,8 @@ while(cap.isOpened()):
 	# Converting image to HSV color space.
 	hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 	value = (35, 35)
-	
-	blurred = cv2.GaussianBlur(hsv, value,0)
+
+	# blurred = cv2.GaussianBlur(hsv, value,0)
 	
 	# Defining lower range for red color detection.
 	lower_red = np.array([0,120,70])
@@ -54,3 +62,6 @@ while(cap.isOpened()):
 	if k == 27:
 		break
 
+# Release and destroy all the captured windows (for operating system)
+webcam.release()
+cv2.destroyAllWindows()
