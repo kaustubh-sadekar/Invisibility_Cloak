@@ -1,5 +1,3 @@
-# Invisibility Cloak
-
 ![Recordit GIF](gif1.gif) 
 ### View [Full video](https://www.youtube.com/watch?v=LcoxbDqEf3A)
 
