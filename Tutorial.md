@@ -80,23 +80,54 @@ lower_red = np.array([170,120,70])
 upper_red = np.array([180,255,255])
 mask2 = cv2.inRange(hsv,lower_red,upper_red)
 ```
-Hue range | 0-10 | 170-180
----|---|---
+<!-- Hue range | 0-10 | 170-180
+---|---|--- -->
+<table class="tg">
+<thead>
+  <tr>
+    <td class="tg-0lax">Hue range</td>
+    <td class="tg-0lax">0-10</td>
+    <td class="tg-0lax">170-180</td>
+  </tr>
+</thead>
+</table>
+
 
 >The Hue values actually range between 0-360 degrees but
 >in OpenCV to fit into 8bit value the range is from 0-180.
 >Red colour is represented by 0-10 and 170-180 values.
 
-
+<!-- 
 Saturation range | 120-255
----|---
+---|--- -->
+
+<table class="tg">
+<thead>
+  <tr>
+    <td class="tg-0lax">Saturation range</td>
+    <td class="tg-0lax">120 - 255</td>
+  </tr>
+</thead>
+</table>
+
+
 > Saturation represents purity of colour. Pure Red, Green and Blue
 >are considered to be true saturated colours. As saturation decreases the effect of the other two
 >colour component increases.
 > Here we set the above value because our cloth is of highly saturated red color.
 
-Value range | 70-255
----|---
+<!-- Value range | 70-255
+---|--- -->
+
+<table class="tg">
+<thead>
+  <tr>
+    <td class="tg-0lax">Value range</td>
+    <td class="tg-0lax">70-255</td>
+  </tr>
+</thead>
+</table>
+
 > Value corresponds to the brightness of the image. For a given pixel if the value is increased or 
 > decreased then values of R,G and B will increase or decrease respectively but their percentage 
 >contribution will remain unchanged.
